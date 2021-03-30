@@ -9,7 +9,7 @@ function preload() {
     catImg2=loadAnimation("images/catTwo.png","images/catThree.png");
     catImg3= loadAnimation("images/catFour.png");
     mouseImg1=loadAnimation("images/jmouseOne.png");
-    mouseImg2= loadAnimation("images/mouseTwo.png","images/jerryThree.png");
+    mouseImg2= loadAnimation("images/mouseTwo.png","images/mouseThree.png");
     mouseImg3=loadAnimation("images/mouseFour.png");
 
 }
@@ -18,7 +18,7 @@ function setup(){
     canvas = createCanvas(1000,800);
 
     cat = createSprite(870, 600);
-    cat.addAnimation("catSleeping", catmg1);
+    cat.addAnimation("catSleeping", catImg1);
     cat.scale = 0.2;
 
     mouse = createSprite(200, 600);
@@ -56,6 +56,6 @@ function keyPressed(){
         
         mouse.addAnimation("mouseTeasing", mouseImg2);
         mouse.frameDelay = 25;
-        mouse.changeAnimation("mouseyTeasing");
+        mouse.changeAnimation("mouseTeasing");
     }
 }
